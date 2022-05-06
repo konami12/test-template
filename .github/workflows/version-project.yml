@@ -28,5 +28,4 @@ jobs:
             git branch --show-current
             git fetch
             git pull
-            git fetch --unshallow
-            git branch --show-current
+            git push --force
