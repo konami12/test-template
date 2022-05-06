@@ -15,4 +15,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.x
-      - run: echo "hola"
+      - name: "Actualizando git config"
+      - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
+      - run: git config --global user.name "Jorge Mendez Ortega"
