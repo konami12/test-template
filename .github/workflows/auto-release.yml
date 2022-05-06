@@ -14,8 +14,22 @@ jobs:
       - name: Setup Node 16
         uses: actions/setup-node@v3
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ github.token }}
           node-version: 16.x
       - run: echo ${{ secrets.TOKEN }}
       - run: echo ${{ github.token }}
       - run: echo ${{ secrets.GITHUB_TOKEN }}
+      - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
+      - run: git config --global user.name "Jorge Mendez Ortega"
+      - run: npm install
+      - run: npm run release
+      - run: git fetch origin ${GITHUB_REF#refs/}
+      - run: git pull origin ${GITHUB_REF#refs/}
+      - run: git push origin ${GITHUB_REF#refs/} --force
+      - run: git push origin --follow-tags
+      - run: git fetch --unshallow
+      - run: |
+          git checkout main
+          git pull
+          git merge --no-ff main -m "Auto-merge master back to main"
+          git push
