@@ -20,9 +20,10 @@ jobs:
         run: npm install
       - name: " 🏗  Generando release"
         run: "npm run release"
-      - run: git fetch origin ${GITHUB_REF#refs/}
-      - run: git pull origin ${GITHUB_REF#refs/}
-      - run: git push origin ${GITHUB_REF#refs/} --force
-      - run: git push origin --follow-tags
-      - run: git fetch --unshallow
-
+      - name: " 🔃 Subiendo el release"
+        run: |
+            git fetch origin ${GITHUB_REF#refs/}
+            git pull origin ${GITHUB_REF#refs/}
+            git push origin ${GITHUB_REF#refs/} --force
+            git push origin --follow-tags
+            git fetch --unshallow
