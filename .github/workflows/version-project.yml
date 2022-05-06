@@ -11,10 +11,13 @@ jobs:
         node: ['16']
     steps:
       - uses: actions/checkout@v3
-      - name: Setup node 16
+      - name: Setup node LTS
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
-      - name: "Actualizando git config"
-        run: git config --global user.email "jorge.mendez.ortega@gmail.com"
-      - run: git config --global user.name "Jorge Mendez Ortega"
+      - name: "📝 Actualizando git config"
+        run: |
+            git config --global user.email "jorge.mendez.ortega@gmail.com"
+            git config --global user.name "Jorge Mendez Ortega"
+      - name: "📦 Instalando dependencias"
+        run: npm install
