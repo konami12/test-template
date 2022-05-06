@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
+    permissions:
+      issues: write
+      pull-requests: write
     strategy:
       matrix:
         node: ['16']
