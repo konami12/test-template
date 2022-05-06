@@ -7,9 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup node LTS
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: lts/*
       - name: " 📝  Actualizando git config"
@@ -20,8 +20,9 @@ jobs:
         run: npm install
       - name: " 🏗  Generando release"
         run: "npm run release"
-      - name: " 🔃 Subiendo el release"
-        run: |
-            git fetch origin ${GITHUB_REF#refs/}
-            git pull origin ${GITHUB_REF#refs/}
-            git push origin ${GITHUB_REF#refs/} --force
+      - run: git fetch origin ${GITHUB_REF#refs/}
+      - run: git pull origin ${GITHUB_REF#refs/}
+      - run: git push origin ${GITHUB_REF#refs/} --force
+      - run: git push origin --follow-tags
+      - run: git fetch --unshallow
+
