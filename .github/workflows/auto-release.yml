@@ -18,3 +18,4 @@ jobs:
           node-version: 16.x
       - run: echo ${{ secrets.TOKEN }}
       - run: echo ${{ github.token }}
+      - run: echo ${{ secrets.GITHUB_TOKEN }}
