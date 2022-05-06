@@ -1,35 +1,31 @@
-name: demo
+name: auto-release
 on:
   push:
-   branches:
-    - develop
+    branches:
+      - develop
 jobs:
   build:
-    runs-on: ubuntu-18.04
-    permissions:
-      issues: write
-      pull-requests: write
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node: ['16']
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup node LTS
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - name: Setup Node 16
+        uses: actions/setup-node@v2
         with:
-          node-version: lts/*
-      - name: " 📝  Actualizando git config"
-        run: |
-            echo ${{ secrets.GITHUB_TOKEN }}
-            git config --global user.email "jorge.mendez.ortega@gmail.com"
-            git config --global user.name "Jorge Mendez Ortega"
-      - name: " 📦  Instalando dependencias"
-        run: npm install
-      - name: " 🏗  Generando release"
-        run: "npm run release"
-      - name: " 🔃  Subiendo release"
-        run: |
-            git branch --show-current
-            git fetch
-            git pull
-            git push --force
+          node-version: 16.x
+      - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
+      - run: git config --global user.name "Jorge Mendez Ortega"
+      - run: npm install
+      - run: npm run release
+      - run: git fetch origin ${GITHUB_REF#refs/}
+      - run: git pull origin ${GITHUB_REF#refs/}
+      - run: git push origin ${GITHUB_REF#refs/} --force
+      - run: git push origin --follow-tags
+      - run: git fetch --unshallow
+      - run: |
+          git checkout main
+          git pull
+          git merge --no-ff main -m "Auto-merge master back to main"
+          git push
