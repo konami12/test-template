@@ -16,4 +16,4 @@ jobs:
         with:
           token: ${{ github.ACTION_SECRET }}
           node-version: 16.x
-      - run: echo ${{ github }}
+      - run: echo ${{ secrets }}
