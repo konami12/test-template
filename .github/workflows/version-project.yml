@@ -16,5 +16,5 @@ jobs:
         with:
           node-version: 16.x
       - name: "Actualizando git config"
-      - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
-      - run: git config --global user.name "Jorge Mendez Ortega"
+        run: git config --global user.email "jorge.mendez.ortega@gmail.com"
+        run: git config --global user.name "Jorge Mendez Ortega"
