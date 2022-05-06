@@ -17,6 +17,7 @@ jobs:
           node-version: lts/*
       - name: " 📝  Actualizando git config"
         run: |
+            echo ${secrets}
             git config --global user.email "jorge.mendez.ortega@gmail.com"
             git config --global user.name "Jorge Mendez Ortega"
       - name: " 📦  Instalando dependencias"
