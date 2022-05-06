@@ -21,7 +21,7 @@ jobs:
             git config --global user.name "Jorge Mendez Ortega"
       - name: " 📦  Instalando dependencias"
         run: npm install
-      - name: " 🏗  Generando release1"
+      - name: " 🏗  Generando release"
         run: "npm run release"
       - name: " 🔃  Subiendo release"
         run: |
