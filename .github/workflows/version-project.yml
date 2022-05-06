@@ -15,9 +15,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
-      - name: "📝 Actualizando git config"
+      - name: " 📝  Actualizando git config"
         run: |
             git config --global user.email "jorge.mendez.ortega@gmail.com"
             git config --global user.name "Jorge Mendez Ortega"
-      - name: "📦 Instalando dependencias"
+      - name: " 📦  Instalando dependencias"
         run: npm install
+      - name: " 🏗  Generando release"
+        run: "npm run release"
+      - name: " 🔃 Subiendo el release"
+        run: |
+            git fetch --unshallow
+            git fetch
+            git pull
+            git push --force
+            git push origin --follow-tags
