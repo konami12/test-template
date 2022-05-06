@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        node: ['16']
     steps:
       - uses: actions/checkout@v3
       - name: Setup node LTS
@@ -20,10 +23,3 @@ jobs:
         run: npm install
       - name: " 🏗  Generando release"
         run: "npm run release"
-      - name: " 🔃 Subiendo el release"
-        run: |
-            git fetch origin ${GITHUB_REF#refs/}
-            git pull origin ${GITHUB_REF#refs/}
-            git push origin ${GITHUB_REF#refs/} --force
-            git push origin --follow-tags
-            git fetch --unshallow
