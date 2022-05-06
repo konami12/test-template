@@ -14,9 +14,9 @@ jobs:
       - name: Setup Node 16
         uses: actions/setup-node@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACTION_SECRET }}
           node-version: 16.x
-      - run: echo ${{ secrets.TOKEN }}
+      - run: echo ${{ secrets.ACTION_SECRET }}
       - run: echo ${{ github.token }}
       - run: echo ${{ secrets.GITHUB_TOKEN }}
       - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
