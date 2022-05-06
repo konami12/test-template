@@ -25,5 +25,3 @@ jobs:
             git fetch origin ${GITHUB_REF#refs/}
             git pull origin ${GITHUB_REF#refs/}
             git push origin ${GITHUB_REF#refs/} --force
-            git push origin --follow-tags
-            git fetch --unshallow
