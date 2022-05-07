@@ -27,8 +27,5 @@ jobs:
       run: |
           git fetch
           git pull
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+          git branch --show-current
+          git push origin ${GITHUB_REF#refs/} --force
