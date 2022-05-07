@@ -4,6 +4,7 @@
   "description": "Template base para repositorios que utilizan NodeJS",
   "main": "./src/",
   "scripts": {
+    "pre-commit": "lint-staged",
     "release:beta": "npx standar-version --prerelease beta",
     "release": "standard-version",
     "frendly": "commitizen init cz-conventional-changelog --save-dev --save-exact --force",
@@ -35,10 +36,8 @@
     "prettier": "2.6.2"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
-    "D": "^1.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
