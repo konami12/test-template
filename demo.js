@@ -1,1 +1,1 @@
-console.log('gggg');
+const suma = () => 5*5;
