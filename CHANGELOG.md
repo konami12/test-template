@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.7](https://github.com/konami12/test-template/compare/v1.5.6...v1.5.7) (2022-05-07)
+
+
+### Bug Fixes
+
+* probando actions 2 ([94c1106](https://github.com/konami12/test-template/commit/94c11061046606801ba84d186da5299c87f1dfe4))
+
 ### [1.5.6](https://github.com/konami12/test-template/compare/v1.5.5...v1.5.6) (2022-05-07)
 
 
