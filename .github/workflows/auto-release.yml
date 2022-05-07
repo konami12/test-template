@@ -18,4 +18,4 @@ jobs:
           git config --local user.name "${{ secrets.GIT_USER }}"
           git config --local user.email "${{ secrets.GIT_EMAIL }}"
     - name: 📝 Creando release
-      run: npm run install
+      run: npm run release
