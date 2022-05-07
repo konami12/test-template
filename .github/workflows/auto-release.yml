@@ -7,10 +7,6 @@ jobs:
   build:
    runs-on: ubuntu-18.04
    steps:
-    - uses: hisasann/simple-github-auto-push@main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_NAME: ${GITHUB_REF#refs/}
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
