@@ -29,3 +29,9 @@ jobs:
           git pull
           git push
           git push origin --follow-tags
+    - name: 🔄 Sincronizando ramas
+      run:
+         git checkout main
+         git pull
+        git merge --no-ff main -m "AutoSincronizacion desde develop a main"
+        git push
