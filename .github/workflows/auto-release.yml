@@ -27,3 +27,4 @@ jobs:
           git fetch
           git pull
           git branch --show-current
+          git push
