@@ -27,4 +27,4 @@ jobs:
           git fetch
           git pull
           git branch --show-current
-          git push
+          git push origin ${GITHUB_REF#refs/} --force
