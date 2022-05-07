@@ -23,7 +23,7 @@ jobs:
       run: npm install
     - name: 📝 Creando release
       run: npm run release
-    - name: 🔃 Preparando el push para el release
+    - name: 🔃 Preparando el push para subir el release
       run: |
           git fetch
           git pull
