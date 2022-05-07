@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/konami12/test-template/compare/v1.5.7...v2.0.0) (2022-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* **suna:** por que quiero ver que pasa
+
+### Features
+
+* **suna:** creando una sumita ([defc482](https://github.com/konami12/test-template/commit/defc482b207e04cf205570368149433cc8f0ea13))
+
 ### [1.5.7](https://github.com/konami12/test-template/compare/v1.5.6...v1.5.7) (2022-05-07)
 
 
