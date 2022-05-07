@@ -12,7 +12,5 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
-    - name: Configurando firmas de GitHub
-      run: |
-        git config --local user.name ${{ secrets.GIT_USER }}
-        git config --local user.email "${{ secrets.GIT_EMAIL }}"
+    - run: git config --local user.name "${{ secrets.GIT_USER }}"
+    - run: git config --local user.email "${{ secrets.GIT_EMAIL }}"
