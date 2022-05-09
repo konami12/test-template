@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/konami12/test-template/compare/v2.1.0...v2.2.0) (2022-05-09)
+
+
+### Features
+
+* **prueba:** fsfdas ([6c37932](https://github.com/konami12/test-template/commit/6c3793235aa511c591d05b5d954052d5181ec475))
+* **variables:** usando variables para el manejo de ramas ([96dec80](https://github.com/konami12/test-template/commit/96dec8025f49c368be10fb35e2ee6b6642408be1))
+
 ## [2.1.0](https://github.com/konami12/test-template/compare/v2.0.0...v2.1.0) (2022-05-08)
 
 
