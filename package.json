@@ -1,6 +1,6 @@
 {
   "name": "repositorio",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Template base para repositorios que utilizan NodeJS",
   "main": "./src/",
   "scripts": {
