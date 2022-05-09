@@ -2,7 +2,7 @@ name: auto-release
 on:
   push:
     branches:
-      - develop
+      - ${{ secrets.GIT_DEVELOP_BRANCH }}
 jobs:
   build:
    runs-on: ubuntu-18.04
@@ -34,5 +34,5 @@ jobs:
           git checkout ${{ secrets.GIT_MAIN_BRANCH }}
           git fetch
           git pull
-          git merge --no-ff develop -m "Auto-merge master back tos ${{ secrets.GIT_MAIN_BRANCH }}"
+          git merge --no-ff ${{ secrets.GIT_DEVELOP_BRANCH }} -m "Auto-merge master back tos ${{ secrets.GIT_MAIN_BRANCH }}"
           git push
