@@ -34,5 +34,5 @@ jobs:
           git checkout ${{ secrets.GIT_MAIN_BRANCH }}
           git fetch
           git pull
-          git merge --no-ff develop -m "Auto-merge master back to ${{ secrets.GIT_MAIN_BRANCH }}"
+          git merge --no-ff develop -m "Auto-merge master back tos ${{ secrets.GIT_MAIN_BRANCH }}"
           git push
