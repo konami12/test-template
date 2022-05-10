@@ -1,2 +1,5 @@
 const Suma = (a, b) => a + b;
-export default Suma;
+
+const Resta = (a, b) => a - b;
+
+export { Suma, Resta };

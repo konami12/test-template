@@ -11,28 +11,28 @@ jobs:
       with:
         fetch-depth: 0
         token: ${{ secrets.GITHUB_TOKEN }}
-    - name: 📦 Install Node LTS
+    - name: 📦 INSTALL NODE LTS
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
-    - name: ✏️ Configuraciones para firmar commits
+    - name: ✏️ CONFIGURACIONES PARA FIRMAR COMMITS
       run: |
           git config --local user.name "${{ secrets.GIT_USER }}"
           git config --local user.email "${{ secrets.GIT_EMAIL }}"
-    - name: 🚛 Cargando dependencias
+    - name: 🚛 CARGANDO DEPENDENCIAS
       run: npm install
-    - name: 📝 Creando release
+    - name: 📝 CREANDO RELEASE
       run: npm run release
-    - name: 🔃 Preparando el push para subir el release
+    - name: 🔃 PREPARANDO EL PUSH PARA SUBIR EL RELEASE
       run: |
           git fetch
           git pull
           git push
           git push origin --follow-tags
-    - name: 🔄 Sincronizando ramas
+    - name: 🔄 SINCRONIZANDO RAMAS
       run: |
-          git checkout ${{ secrets.GIT_MAIN_BRANCH }}
+          git checkout ${{ secrets.GIT_DEVELOP_BRANCH }}
           git fetch
           git pull
-          git merge --no-ff ${{ secrets.GIT_DEVELOP_BRANCH }} -m "Auto-merge master back tos ${{ secrets.GIT_MAIN_BRANCH }}"
+          git merge --no-ff ${{ secrets.GIT_main_BRANCH }} -m "Auto-merge master back tos ${{ secrets.GIT_DEVELOP_BRANCH }}"
           git push
