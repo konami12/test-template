@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/konami12/test-template/compare/v2.4.0...v3.0.0) (2022-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **romper:** tomper
+
+### Features
+
+* **romper:** tienes que romper ([ce2072d](https://github.com/konami12/test-template/commit/ce2072d4869352ca7ab7f3e7fec2970ec78ab1b3))
+
 ## [2.4.0](https://github.com/konami12/test-template/compare/v2.3.0...v2.4.0) (2022-05-10)
 
 
