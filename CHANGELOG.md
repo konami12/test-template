@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/konami12/test-template/compare/v2.3.0...v2.4.0) (2022-05-10)
+
+
+### Features
+
+* probando git actions ([80b7787](https://github.com/konami12/test-template/commit/80b77876ff3d44e8ee58dc8f0893b9a3d3aeab19))
+* probando git actions ([b52f47a](https://github.com/konami12/test-template/commit/b52f47a5d6312cd896a0dd7732c5a5e9cd5f27f5))
+* **romper:** esto tiene que romper all ([38a33ea](https://github.com/konami12/test-template/commit/38a33ea46eca2cdc712e19cb52077c2d9e389bd2))
+
 ## [2.3.0](https://github.com/konami12/test-template/compare/v2.2.6...v2.3.0) (2022-05-10)
 
 
