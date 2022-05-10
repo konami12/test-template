@@ -2,7 +2,7 @@ name: auto-release
 on:
   push:
     branches:
-      - develop
+      - "${{ secrets.GIT_DEVELOP_BRANCH }}"
 jobs:
   build:
    runs-on: ubuntu-18.04
