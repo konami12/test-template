@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.5](https://github.com/konami12/test-template/compare/v2.2.4...v2.2.5) (2022-05-10)
+
+
+### Bug Fixes
+
+* probando ramas como variables ([439604e](https://github.com/konami12/test-template/commit/439604e2d5961ec6bf59ea25feab4b9238715f42))
+
 ### [2.2.4](https://github.com/konami12/test-template/compare/v2.2.3...v2.2.4) (2022-05-10)
 
 
