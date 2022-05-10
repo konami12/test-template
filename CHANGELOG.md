@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/konami12/test-template/compare/v2.2.6...v2.3.0) (2022-05-10)
+
+
+### Features
+
+* **pruebafinal:** esto es para ver si genera bien el changelog ([51af8fb](https://github.com/konami12/test-template/commit/51af8fbb3e65e114c12a0a908f38da060507ac5a))
+
 ### [2.2.6](https://github.com/konami12/test-template/compare/v2.2.5...v2.2.6) (2022-05-10)
 
 
