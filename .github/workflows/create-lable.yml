@@ -12,15 +12,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
-      - name: 🛣 CARGANDO LA RUTA
-        run: |
-          cd ./extras/createLabels/
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
+          cd ./extras/createLabels/
           npm init -y
           npm i isomorphic-fetch
       - name: 🏗 CREANDO ETIQUETAS
         run: |
+          cd ./extras/createLabels/
           node ./index.js ${{ secrets.GITHUB_TOKEN }}
           echo ${{ secrets.GITHUB_ACTION_REPOSITORY }}
           echo ${{ secrets.GITHUB_ACTOR }}
