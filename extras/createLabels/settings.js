@@ -3,6 +3,10 @@ module.exports = {
     repository: "test-template",
     labels: [
         {
+            name: "🤵🏻 DEMO",
+            description: "Se utiliza al subir cambios a producción ne los días especificados.",
+        },
+        {
             name: "☃️ CodeFreez",
             color: "004d99",
             description: "Se utiliza al subir cambios a producción ne los días especificados.",

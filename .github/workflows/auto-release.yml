@@ -2,7 +2,7 @@ name: auto-release
 on:
   push:
     branches:
-      - mains
+      - main
 jobs:
   build:
    runs-on: ubuntu-18.04
@@ -17,8 +17,8 @@ jobs:
         node-version: lts/*
     - name: ✏️ CONFIGURACIONES PARA FIRMAR COMMITS
       run: |
-          git config --local user.name "${{ secrets.GIT_USER }}"
-          git config --local user.email "${{ secrets.GIT_EMAIL }}"
+          git config --local user.name "GitActionsBot"
+          git config --local user.email "gitbot@git.com"
     - name: 🚛 CARGANDO DEPENDENCIAS
       run: npm install
     - name: 📝 CREANDO RELEASE
@@ -31,8 +31,8 @@ jobs:
           git push origin --follow-tags
     - name: 🔄 SINCRONIZANDO RAMAS
       run: |
-          git checkout ${{ secrets.GIT_DEVELOP_BRANCH }}
+          git checkout develop
           git fetch
           git pull
-          git merge --no-ff ${{ secrets.GIT_main_BRANCH }} -m "Auto-merge master back tos ${{ secrets.GIT_DEVELOP_BRANCH }}"
+          git merge --no-ff main -m "Auto-merge master back tos develop"
           git push

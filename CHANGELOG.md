@@ -2,6 +2,70 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.7](https://github.com/konami12/test-template/compare/v4.2.6...v4.2.7) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([e01d6f0](https://github.com/konami12/test-template/commit/e01d6f072004ef57b68760d4e4f5fbb4fc49b608))
+* probando crear tags ([30d3276](https://github.com/konami12/test-template/commit/30d32762f908c2a5bb1b7f8f6ae5aed0fbde604f))
+
+### [4.2.6](https://github.com/konami12/test-template/compare/v4.2.5...v4.2.6) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([075f976](https://github.com/konami12/test-template/commit/075f9763c917a2c7d5321f69a7578046f874da82))
+
+### [4.2.5](https://github.com/konami12/test-template/compare/v4.2.4...v4.2.5) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([da2befd](https://github.com/konami12/test-template/commit/da2befd6aae0fa82881e7205ef63aeb2197cea56))
+
+### [4.2.4](https://github.com/konami12/test-template/compare/v4.2.3...v4.2.4) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([9d28145](https://github.com/konami12/test-template/commit/9d28145a4d76b0523b979a85241c35d868f1fb7c))
+
+### [4.2.3](https://github.com/konami12/test-template/compare/v4.2.2...v4.2.3) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([8fec9f1](https://github.com/konami12/test-template/commit/8fec9f176466ad3a883cbaa243a71c5d454a6f5b))
+
+### [4.2.2](https://github.com/konami12/test-template/compare/v4.2.1...v4.2.2) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([6938b29](https://github.com/konami12/test-template/commit/6938b29dfadf901ee178b6dd45d5249fb5594652))
+* probando crear tags ([55f1908](https://github.com/konami12/test-template/commit/55f190850e971503ee02ecf35726f9b46d5dfe50))
+* probando crear tags ([677364a](https://github.com/konami12/test-template/commit/677364ad02c1e9ce1d761743a7cbdb952d4bf2fb))
+* probando crear tags ([23c7f88](https://github.com/konami12/test-template/commit/23c7f88d84ee41426ddc1de5f4707c3f997fd8bd))
+* probando crear tags ([709ae4b](https://github.com/konami12/test-template/commit/709ae4b6d2dfb5474755ab6c96c0a873e1e891fe))
+* probando crear tags ([fec5f9f](https://github.com/konami12/test-template/commit/fec5f9f0285e7ee0f87bcb3c5399843dd730e91e))
+* probando crear tags ([47a12cf](https://github.com/konami12/test-template/commit/47a12cf7c09890b9fa24cd5900792a6993b857c2))
+* probando crear tags ([745658e](https://github.com/konami12/test-template/commit/745658e22915bbf0e63d2bfa912dc4d5c464fb4e))
+* probando crear tags ([ae60d20](https://github.com/konami12/test-template/commit/ae60d2081465f02b0fb6a9b9a78fd2293e0233d6))
+* probando crear tags ([9976c97](https://github.com/konami12/test-template/commit/9976c97884766ac769965c79ab85cffe80d608f6))
+* probando crear tags ([6b91167](https://github.com/konami12/test-template/commit/6b9116767bfd8c722a4135d12e3352ad1b705b1a))
+* probando crear tags ([f52aaff](https://github.com/konami12/test-template/commit/f52aaffb69011be3f72444817e182c54b080975c))
+* probando crear tags ([4579ff8](https://github.com/konami12/test-template/commit/4579ff885da4d0c288b7630253f0f49be517196f))
+* probando crear tags ([e9176cc](https://github.com/konami12/test-template/commit/e9176cc57a418fa1d6f24b33de662b84dd3ca5d1))
+* probando crear tags ([56a30cc](https://github.com/konami12/test-template/commit/56a30cc345dc6c33159a949ca4b0766bbdb15e1b))
+* probando crear tags ([1f332f7](https://github.com/konami12/test-template/commit/1f332f70cb675669549d518c73bd3e66b5007e71))
+* probando crear tags ([6f8502f](https://github.com/konami12/test-template/commit/6f8502fcf2b8af2457d53f1472c7b09df7a51f85))
+* probando crear tags ([fd32d3d](https://github.com/konami12/test-template/commit/fd32d3d7e0c19033f003849506a07f51a45c9bc1))
+* probando crear tags ([49601b6](https://github.com/konami12/test-template/commit/49601b612b6afa0502d4d20655a42bc229754efc))
+* probando crear tags ([16901c0](https://github.com/konami12/test-template/commit/16901c02660d32c21660b4239de95083bbd99941))
+* probando crear tags ([ae1a365](https://github.com/konami12/test-template/commit/ae1a365c9d24c1cbbeb5bcaae750e57ae8e96558))
+* probando crear tags ([013256d](https://github.com/konami12/test-template/commit/013256d205c5b794fce30afe80cb7980d3fd360a))
+
 ### [4.2.1](https://github.com/konami12/test-template/compare/v4.2.0...v4.2.1) (2022-05-13)
 
 
