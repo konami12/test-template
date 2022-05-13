@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.6](https://github.com/konami12/test-template/compare/v4.2.5...v4.2.6) (2022-05-13)
+
+
+### Bug Fixes
+
+* probando crear tags ([075f976](https://github.com/konami12/test-template/commit/075f9763c917a2c7d5321f69a7578046f874da82))
+
 ### [4.2.5](https://github.com/konami12/test-template/compare/v4.2.4...v4.2.5) (2022-05-13)
 
 
