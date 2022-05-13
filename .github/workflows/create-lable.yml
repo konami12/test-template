@@ -25,7 +25,7 @@ jobs:
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
       - name: ❌ BORRANDO SCRIPT
         run: |
-            git rm ./extras
+            git rm -r ./extras
             git fetch
             git pull
             git commit -m "feat(bot): Se elimina labelator"
