@@ -1,6 +1,6 @@
 name: create-label
 on:
-  create:
+  push:
     branches:
       - main
 jobs:
@@ -15,4 +15,4 @@ jobs:
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
           npm g -i node-fetch
-          echo "HOLA"
+          node ./extras/createLabels/inidex.js
