@@ -17,8 +17,8 @@ jobs:
         node-version: lts/*
     - name: ✏️ CONFIGURACIONES PARA FIRMAR COMMITS
       run: |
-          git config --local user.name "${{ secrets.GIT_USER }}"
-          git config --local user.email "${{ secrets.GIT_EMAIL }}"
+          git config --local user.name "GitActionsBot"
+          git config --local user.email "gitbot@git.com"
     - name: 🚛 CARGANDO DEPENDENCIAS
       run: npm install
     - name: 📝 CREANDO RELEASE
