@@ -1,6 +1,5 @@
 module.exports = {
     owner: "konami12",
-    secret: "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",
     repository: "test-template",
     labels: [
         {
