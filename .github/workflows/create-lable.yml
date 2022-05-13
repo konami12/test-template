@@ -20,6 +20,4 @@ jobs:
       - name: 🏗 CREANDO ETIQUETAS
         run: |
           cd ./extras/createLabels/
-          node ./index.js ${{ secrets.GITHUB_TOKEN }}
-          echo ${{ github.repository_owner }}
-          echo ${{ github.repository }}
+          node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}

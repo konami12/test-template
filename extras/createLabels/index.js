@@ -4,13 +4,16 @@
 /* eslint-disable no-underscore-dangle */
 // eslint-disable-next-line import/no-extraneous-dependencies
 require("isomorphic-fetch");
-const { owner, repository, labels } = require("./settings");
+const { labels } = require("./settings");
 
 const CreateLabels = (() => {
+    const REPOSITORY = process.argv.pop();
+    const OWNER = process.argv.pop();
+    const TOKEN = process.argv.pop();
     const __OPTIONS = {
         method: "GET",
         headers: {
-            Authorization: `Basic ${btoa(`${owner}:${process.argv.pop()}`)}`,
+            Authorization: `Basic ${btoa(`${OWNER}:${TOKEN}`)}`,
             Accept: "application/vnd.github.v3+json",
         },
     };
@@ -60,10 +63,7 @@ const CreateLabels = (() => {
      * @return Array.
      */
     const __requestApi = async (labelName = "") => {
-        const REQUEST = await fetch(
-            `https://api.github.com/repos/${owner}/${repository}/labels${labelName}`,
-            __OPTIONS,
-        );
+        const REQUEST = await fetch(`https://api.github.com/repos/${REPOSITORY}/labels${labelName}`, __OPTIONS);
         let response = [{ name: labelName, erase: 0 }];
         try {
             response = __OPTIONS.method === "DELETE" ? [{ label: labelName, erase: 1 }] : await REQUEST.json();
@@ -118,7 +118,8 @@ const CreateLabels = (() => {
      */
     const init = async () => {
         console.group("Proceso de configuracion de etiquetas");
-        console.log(process.argv);
+        console.log(__OPTIONS);
+        console.log(`https://api.github.com/repos/${REPOSITORY}/labels`);
         await __borrar();
         await __create();
         console.groupEnd("Proceso de configuracion de etiquetas");
