@@ -1,6 +1,8 @@
 name: create-label
 on:
-  create
+  create:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -13,4 +15,4 @@ jobs:
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
           npm g -i node-fetch
-          node ./demo.js
+          echo "HOLA"
