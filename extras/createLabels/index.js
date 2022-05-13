@@ -90,13 +90,14 @@ const CreateLabels = (() => {
      */
     const __borrar = async () => {
         const LABELS = await __listar();
-        let count = 0;
-        __OPTIONS.method = "DELETE";
-        for (const { name } of LABELS) {
-            await __requestApi(`/${name}`);
-            count += 1;
-        }
-        console.log(`Etiquetas borradas = ${count}`);
+        console.log(LABELS);
+        // let count = 0;
+        // __OPTIONS.method = "DELETE";
+        // for (const { name } of LABELS) {
+        //     await __requestApi(`/${name}`);
+        //     count += 1;
+        // }
+        // console.log(`Etiquetas borradas = ${count}`);
     };
 
     /**
@@ -108,7 +109,7 @@ const CreateLabels = (() => {
         __OPTIONS.method = "POST";
         for (const ITEM of LIST_LABEL) {
             __OPTIONS.body = JSON.stringify(ITEM);
-            await __requestApi();
+            // await __requestApi();
             count += 1;
         }
         console.log(`Etiquetas creadas = ${count}`);
