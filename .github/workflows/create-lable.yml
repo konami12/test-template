@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: 📦 INSTALL NODE LTS
         uses: actions/setup-node@v3
         with:
@@ -23,4 +25,8 @@ jobs:
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
       - name: ❌ BORRANDO SCRIPT
         run: |
-            git branch --show-current
+            git rm ./extras
+            git fetch
+            git pull
+            git commit -m "feat(bot): Se elimina labelator"
+            git push
