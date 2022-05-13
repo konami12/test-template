@@ -1,8 +1,11 @@
 module.exports = {
     owner: "konami12",
-    secret: "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",
     repository: "test-template",
     labels: [
+        {
+            name: "🤵🏻 DEMO",
+            description: "Se utiliza al subir cambios a producción ne los días especificados.",
+        },
         {
             name: "☃️ CodeFreez",
             color: "004d99",

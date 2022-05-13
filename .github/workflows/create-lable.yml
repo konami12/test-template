@@ -1,7 +1,8 @@
 name: create-label
 on:
-  push:
+  create:
     branches:
+      - develop
       - main
 jobs:
   build:
@@ -14,5 +15,10 @@ jobs:
           node-version: lts/*
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
-          npm g -i node-fetch
-          node ./extras/createLabels/inidex.js
+          cd ./extras/createLabels/
+          npm init -y
+          npm i isomorphic-fetch
+      - name: 🏗 CREANDO ETIQUETAS
+        run: |
+          cd ./extras/createLabels/
+          node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}

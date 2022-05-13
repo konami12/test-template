@@ -1,6 +1,6 @@
 {
     "name": "repositorio",
-    "version": "4.2.1",
+    "version": "4.2.2",
     "description": "Template base para repositorios que utilizan NodeJS",
     "main": "./src/",
     "scripts": {
@@ -37,8 +37,8 @@
         "eslint-plugin-react": "7.29.4",
         "eslint-plugin-react-hooks": "4.5.0",
         "husky": "7.0.4",
+        "isomorphic-fetch": "^3.0.0",
         "lint-staged": "12.4.1",
-        "isomorphic-fetch": "3.0.0",
         "prettier": "2.6.2",
         "standard-version": "9.3.2"
     }
