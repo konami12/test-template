@@ -2,6 +2,7 @@ name: create-label
 on:
   create:
     branches:
+      - develop
       - main
 jobs:
   build:
