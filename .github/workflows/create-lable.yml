@@ -14,5 +14,6 @@ jobs:
           node-version: lts/*
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
-          sudo npm i -g isomorphic-fetch
-          node ./extras/createLabels/index.js
+          cd ./extras/createLabels/
+          npm i
+          node ./index.js
