@@ -1,7 +1,8 @@
 name: create-label
 on:
   create:
-
+    branches:
+      - demo
 jobs:
   build:
     runs-on: ubuntu-18.04
