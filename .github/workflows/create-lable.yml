@@ -21,5 +21,5 @@ jobs:
         run: |
           cd ./extras/createLabels/
           node ./index.js ${{ secrets.GITHUB_TOKEN }}
-          echo ${{ github.actor }}
-          echo ${{ github.action_repository }}
+          echo ${{ github.repository_owner }}
+          echo ${{ github.repository }}
