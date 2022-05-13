@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/konami12/test-template/compare/v4.4.0...v4.5.0) (2022-05-13)
+
+
+### Features
+
+* probando labellator ([7e33bdb](https://github.com/konami12/test-template/commit/7e33bdb9ef9c73fecf306371dbadf4fb35afe476))
+
 ## [4.4.0](https://github.com/konami12/test-template/compare/v4.3.0...v4.4.0) (2022-05-13)
 
 
