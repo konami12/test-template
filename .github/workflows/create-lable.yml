@@ -1,6 +1,6 @@
 name: create-label
 on:
-  create:
+  push:
     branches:
       - main
 jobs:
@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: 📦 INSTALL NODE LTS
         uses: actions/setup-node@v3
         with:
@@ -21,3 +23,12 @@ jobs:
         run: |
           cd ./extras/createLabels/
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
+      - name: ❌ BORRANDO SCRIPT
+        run: |
+            git config --local user.name "GitActionsBot"
+            git config --local user.email "gitbot@git.com"
+            git rm -r ./extras
+            git fetch
+            git pull
+            git commit -m "feat(bot): Se elimina labelator"
+            git push
