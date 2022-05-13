@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0](https://github.com/konami12/test-template/compare/v4.2.7...v4.3.0) (2022-05-13)
+
+
+### Features
+
+* **bot:** Se elimina labelator ([0d120c2](https://github.com/konami12/test-template/commit/0d120c2751631b9911730b19b92ecc99fc01d98a))
+* **bot:** Se elimina labelator ([5da163d](https://github.com/konami12/test-template/commit/5da163d0bfd85a74ed8531eadcc8fe7086c32b37))
+* **bot:** Se elimina labelator ([8757b26](https://github.com/konami12/test-template/commit/8757b266df3d8dac9d7a16025b38fb023997d405))
+* probando labellator ([cf1efb1](https://github.com/konami12/test-template/commit/cf1efb1fd1e0a8f97124f0cd58ef8f2c473f501f))
+* probando labellator ([d3ed73e](https://github.com/konami12/test-template/commit/d3ed73e6426e3d4d117ad0be9b9a752bb6d6c9dd))
+* probando labellator ([75bb337](https://github.com/konami12/test-template/commit/75bb337d52a8d63dd357c9c0f1bd75b2de4a3b43))
+* probando labellator ([f3e6daa](https://github.com/konami12/test-template/commit/f3e6daa1f3c861b167b42dcd1f64270307319b96))
+* probando labellator ([d9fcd77](https://github.com/konami12/test-template/commit/d9fcd77340e92ddba88781fbfec8b953e98c21c9))
+* probando labellator ([b47f0c6](https://github.com/konami12/test-template/commit/b47f0c6736fb19700e9bee2c8c1c00f40fdf33ea))
+* probando labellator ([e1b572f](https://github.com/konami12/test-template/commit/e1b572f5de9b36e70b5ede6224dab5648ff22f75))
+
 ### [4.2.7](https://github.com/konami12/test-template/compare/v4.2.6...v4.2.7) (2022-05-13)
 
 
