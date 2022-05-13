@@ -10,6 +10,7 @@ const CreateLabels = (() => {
     const REPOSITORY = process.argv.pop();
     const OWNER = process.argv.pop();
     const TOKEN = process.argv.pop();
+
     const __OPTIONS = {
         method: "GET",
         headers: {
@@ -17,17 +18,18 @@ const CreateLabels = (() => {
             Accept: "application/vnd.github.v3+json",
         },
     };
+
     /**
      * Permite conseguir un numero aleatorio del 0 al 255
      *
-     * @return     {number}
+     * @return  {number}
      */
     const __range = () => Math.floor(Math.random() * (255 - 0)) + 0;
 
     /**
      * Consigue de manera aleatoria un numero hexadecimal.
      *
-     * @return     {string}
+     * @return  {string}
      */
     const __getHexacolor = () => {
         let RED = __range().toString(16);
@@ -42,8 +44,8 @@ const CreateLabels = (() => {
     /**
      * Formatea la data para cargar campos faltantes.
      *
-     * @param      {Object}  Listada de etiquetas.
-     * @return     Function.
+     * @param  {Object}  Listada de etiquetas.
+     * @return  Function.
      */
     const __prepareDate = listLabel => {
         let RESULT = [];
@@ -58,7 +60,7 @@ const CreateLabels = (() => {
     /**
      * Realiza las peticiones al Api de github.
      *
-     * @param      {string}  [labelName=""]  Nombre de la etiqueta a borrar.
+     * @param {string}  [labelName=""]  Nombre de la etiqueta a borrar.
      *
      * @return Array.
      */
@@ -76,7 +78,7 @@ const CreateLabels = (() => {
     /**
      * Permite conseguir todas las etiquetas del repositorio.
      *
-     * @return     {Object}
+     * @return {Object}
      */
     const __listar = async () => {
         __OPTIONS.method = "GET";
@@ -118,8 +120,6 @@ const CreateLabels = (() => {
      */
     const init = async () => {
         console.group("Proceso de configuracion de etiquetas");
-        console.log(__OPTIONS);
-        console.log(`https://api.github.com/repos/${REPOSITORY}/labels`);
         await __borrar();
         await __create();
         console.groupEnd("Proceso de configuracion de etiquetas");
