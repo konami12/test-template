@@ -17,4 +17,4 @@ jobs:
           cd ./extras/createLabels/
           npm init -y
           npm i isomorphic-fetch
-          node ./index.js
+          node ./index.js $ {{ secrets.GITHUB_TOKEN }}

@@ -4,17 +4,16 @@
 /* eslint-disable no-underscore-dangle */
 // eslint-disable-next-line import/no-extraneous-dependencies
 require("isomorphic-fetch");
-const { owner, secret, repository, labels } = require("./settings");
+const { owner, repository, labels } = require("./settings");
 
 const CreateLabels = (() => {
     const __OPTIONS = {
         method: "GET",
         headers: {
-            Authorization: `Basic ${btoa(`${owner}:${secret}`)}`,
+            Authorization: `Basic ${btoa(`${owner}:${process.argv.pop()}`)}`,
             Accept: "application/vnd.github.v3+json",
         },
     };
-
     /**
      * Permite conseguir un numero aleatorio del 0 al 255
      *
@@ -90,14 +89,13 @@ const CreateLabels = (() => {
      */
     const __borrar = async () => {
         const LABELS = await __listar();
-        console.log(LABELS);
-        // let count = 0;
-        // __OPTIONS.method = "DELETE";
-        // for (const { name } of LABELS) {
-        //     await __requestApi(`/${name}`);
-        //     count += 1;
-        // }
-        // console.log(`Etiquetas borradas = ${count}`);
+        let count = 0;
+        __OPTIONS.method = "DELETE";
+        for (const { name } of LABELS) {
+            await __requestApi(`/${name}`);
+            count += 1;
+        }
+        console.log(`Etiquetas borradas = ${count}`);
     };
 
     /**
@@ -109,7 +107,7 @@ const CreateLabels = (() => {
         __OPTIONS.method = "POST";
         for (const ITEM of LIST_LABEL) {
             __OPTIONS.body = JSON.stringify(ITEM);
-            // await __requestApi();
+            await __requestApi();
             count += 1;
         }
         console.log(`Etiquetas creadas = ${count}`);
