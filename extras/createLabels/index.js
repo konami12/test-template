@@ -118,6 +118,7 @@ const CreateLabels = (() => {
      */
     const init = async () => {
         console.group("Proceso de configuracion de etiquetas");
+        console.log(process.argv);
         await __borrar();
         await __create();
         console.groupEnd("Proceso de configuracion de etiquetas");
