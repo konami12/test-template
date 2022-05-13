@@ -15,4 +15,4 @@ jobs:
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
           npm --g i isomorphic-fetch
-          node ./extras/createLabels/inidex.js
+          node ./extras/createLabels/index.js
