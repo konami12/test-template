@@ -25,6 +25,8 @@ jobs:
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
       - name: ❌ BORRANDO SCRIPT
         run: |
+            git config --local user.name "GitActionsBot"
+            git config --local user.email "gitbot@git.com"
             git rm -r ./extras
             git fetch
             git pull
