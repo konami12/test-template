@@ -15,5 +15,6 @@ jobs:
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
           cd ./extras/createLabels/
-          npm i
+          npm init -y
+          npm i isomorphic-fetch
           node ./index.js
