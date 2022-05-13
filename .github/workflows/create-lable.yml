@@ -23,12 +23,3 @@ jobs:
         run: |
           cd ./extras/createLabels/
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
-      - name: ❌ BORRANDO SCRIPT
-        run: |
-            git config --local user.name "GitActionsBot"
-            git config --local user.email "gitbot@git.com"
-            git fetch
-            git pull
-            git rm -r ./extras
-            git commit -m "feat(bot): Se elimina labelator"
-            git push
