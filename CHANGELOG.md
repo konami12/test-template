@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/konami12/test-template/compare/v4.1.0...v4.2.0) (2022-05-13)
+
+
+### Features
+
+* **init:** init ([a2dde5b](https://github.com/konami12/test-template/commit/a2dde5bc4af89aae5b54e1f11fbae835f5e35ad0))
+
 ## [4.1.0](https://github.com/konami12/test-template/compare/v4.0.0...v4.1.0) (2022-05-12)
 
 
