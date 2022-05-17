@@ -8,13 +8,13 @@ env:
 jobs:
   install_so:
     runs-on: ubutun-18.04
-      steps:
-        - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ITHUB_TOKEN }}
+  install_node_lts:
+    needs: install_so
+      setps:
+        - uses: actions/setup-node@v3
           with:
-            token: ${{ secrets.ITHUB_TOKEN }}
-    install_node_lts:
-      needs: install_so
-        setps:
-          - uses: actions/setup-node@v3
-            with:
-              node-version: lts/*
+            node-version: lts/*
