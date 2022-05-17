@@ -31,5 +31,5 @@ jobs:
           git branch --show-current
           git fetch
           git pull
-          git rm -R ./createLabels
+          git rm -r ./createLabels
           git status
