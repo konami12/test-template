@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+env:
+  EXTRA_PATH: ./extras/createLabels/
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -16,7 +18,7 @@ jobs:
           node-version: lts/*
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
-          cd ./extras/createLabels/
+          cd ${{ EXTRA_PAATH }}
           npm init -y
           npm i isomorphic-fetch
       - name: 🏗 CREANDO ETIQUETAS
