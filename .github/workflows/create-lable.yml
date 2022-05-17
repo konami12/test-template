@@ -18,10 +18,18 @@ jobs:
           node-version: lts/*
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
-          cd $EXTRA_PAATH
+          cd $EXTRA_PATH
           npm init -y
           npm i isomorphic-fetch
       - name: 🏗 CREANDO ETIQUETAS
         run: |
-          cd ./extras/createLabels/
+          cd $EXTRA_PATH
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
+      - name: ❌ BORRANDO EXTRAS
+        run: |
+          cd $EXTRA_PATH
+          git branch --show-current
+          git fetch
+          git pull
+          git rm -R ./createLabels
+          git status
