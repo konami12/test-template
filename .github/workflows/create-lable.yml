@@ -18,7 +18,7 @@ jobs:
           node-version: lts/*
       - name: 🚛 CARGANDO DEPENDENCIAS
         run: |
-          cd ${{ EXTRA_PAATH }}
+          cd $EXTRA_PAATH
           npm init -y
           npm i isomorphic-fetch
       - name: 🏗 CREANDO ETIQUETAS
