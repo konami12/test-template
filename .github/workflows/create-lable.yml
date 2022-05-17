@@ -28,6 +28,7 @@ jobs:
       - name: ❌ BORRANDO EXTRAS
         run: |
           cd $EXTRA_PATH
+          cd ../
           git branch --show-current
           git fetch
           git pull
