@@ -29,6 +29,8 @@ jobs:
         run: |
           cd $EXTRA_PATH
           cd ../
+          git config --local user.name "GitActionsBot"
+          git config --local user.email "gitbot@git.com"
           git fetch
           git pull
           git rm -r ./createLabels
