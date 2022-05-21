@@ -29,4 +29,7 @@ jobs:
         run: |
           git config --local user.name "GitActionsBot"
           git config --local user.email "gitbot@git.com"
-
+      - name: ✏️ BORRANDO EXTRAS
+        run: |
+          git rm -r ${{ EXTRA_PATH }}
+          git status
