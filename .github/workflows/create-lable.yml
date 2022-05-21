@@ -25,18 +25,11 @@ jobs:
         run: |
           cd $EXTRA_PATH
           node ./index.js ${{ secrets.GITHUB_TOKEN }} ${{ github.repository_owner }} ${{ github.repository }}
-      - name: ❌ BORRANDO EXTRAS
+      - name: ⚙️ CONFIGURANDO GIT
         run: |
-          cd $EXTRA_PATH
-          cd ../
           git config --local user.name "GitActionsBot"
           git config --local user.email "gitbot@git.com"
-          git fetch
-          git pull
-          git rm -r ./createLabels
-          git add -A
-          git commit -m "chore: gitbot borrando scripts"
-          git status
-          git checkout develop
-          git merge main
-          git log
+      - name: ✏️ BORRANDO EXTRAS
+        run: |
+           git rm -r ${{ EXTRA_PATH }}
+          git git status
