@@ -32,4 +32,5 @@ jobs:
       - name: ⭕️ BORRANDO EXTRAS
         run: |
           git rm -r $EXTRA_PATH
+          git add -A
           git status
