@@ -29,8 +29,12 @@ jobs:
         run: |
           cd $EXTRA_PATH
           cd ../
-          git branch --show-current
           git fetch
           git pull
           git rm -r ./createLabels
+          git add -A
+          git commit -m "chore: gitbot borrando scripts"
           git status
+          git checkout develop
+          git merge main
+          git log
