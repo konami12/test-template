@@ -32,6 +32,7 @@ jobs:
       - name: ⭕️ BORRANDO EXTRAS
         run: |
           git rm -r $EXTRA_PATH
+          rm -R $EXTRA_PATH/package.json
           git add -A
           git status
           git commit -m "chore: Borrando Scripts para crear labels"
