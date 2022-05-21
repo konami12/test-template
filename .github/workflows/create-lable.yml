@@ -34,5 +34,10 @@ jobs:
           git rm -r $EXTRA_PATH
           git add -A
           git status
-          git commit -m "chore: borrando extras"
-          git log
+          git commit -m "chore: Borrando Scripts para crear labels"
+          git push
+      - name: 🔄 SINCRONIZANDO RAMAS
+        run: |
+            git checkout develop
+            git fetch; git pull
+            git pull origin main
