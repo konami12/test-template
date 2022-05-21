@@ -35,4 +35,4 @@ jobs:
           git add -A
           git status
           git commit -m "chore: borrando extras"
-          git logs
+          git log
