@@ -41,4 +41,8 @@ jobs:
           git branch -a -v
       - name: 🔄 SINCRONIZACION DE RAMAS
         run: |
-          git checkout origin/develop
+          git checkout develop
+          git fetch
+          git pull
+          git merge --no-ff main -m "Auto-merge create labels"
+          git push
