@@ -39,5 +39,5 @@ jobs:
           git push
           git branch -a -v
       - name: 🔄 SINCRONIZACION DE RAMAS
-        r                                                                                                                                                                                                                                                                                                                                                                                                                                                       un: |
+        run: |
           git checkout origin/develop
