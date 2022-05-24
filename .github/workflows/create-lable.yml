@@ -37,6 +37,7 @@ jobs:
           git status
           git commit -m "chore: Borrando Scripts para crear labels"
           git push
+          git branch -a -v
       - name: 🔄 SINCRONIZACION DE RAMAS
         run: |
           git checkout develop
