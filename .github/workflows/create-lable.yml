@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: 📦 INSTALL NODE LTS
         uses: actions/setup-node@v3
@@ -36,4 +37,12 @@ jobs:
           git add -A
           git status
           git commit -m "chore: Borrando Scripts para crear labels"
+          git push
+          git branch -a -v
+      - name: 🔄 SINCRONIZACION DE RAMAS
+        run: |
+          git checkout develop
+          git fetch
+          git pull
+          git merge --no-ff main -m "Auto-merge create labels"
           git push
