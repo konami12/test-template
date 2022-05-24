@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.7.0](https://github.com/konami12/test-template/compare/v4.6.0...v4.7.0) (2022-05-24)
+
+
+### Features
+
+* **api:** borrando extras ([dd6db5d](https://github.com/konami12/test-template/commit/dd6db5da8019a99d4eec019756c7ebe0cc62a2d2))
+* **api:** creacio de etiquetas utilianso el api de git ([a190c5c](https://github.com/konami12/test-template/commit/a190c5cc65d5c0407d390b754801e2e38a9c9da5))
+* **cambios:** ddd ([3e985ed](https://github.com/konami12/test-template/commit/3e985ed1a52309d2f76debda45aaa6af03531839))
+
 ## [4.6.0](https://github.com/konami12/test-template/compare/v4.5.0...v4.6.0) (2022-05-24)
 
 
