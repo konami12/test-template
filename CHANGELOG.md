@@ -2,6 +2,45 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.6.0](https://github.com/konami12/test-template/compare/v4.5.0...v4.6.0) (2022-05-24)
+
+
+### Features
+
+* **api:** generando etiquetas ([03e45d0](https://github.com/konami12/test-template/commit/03e45d0acc560be96c4c588d2b2b2932a385832d))
+* **demo:** dfg ([0c75b21](https://github.com/konami12/test-template/commit/0c75b21aa3e8e14c2ca4b82f4781d5b8a10b44e1))
+* probando borrar cosas ([7cbcb86](https://github.com/konami12/test-template/commit/7cbcb86607b617ecf5a6b653597015bdd55b7cd0))
+* probando borrar cosas ([a03c793](https://github.com/konami12/test-template/commit/a03c793a74d9d950df2eb1213260c99d55242026))
+* probando borrar cosas ([3e78cc4](https://github.com/konami12/test-template/commit/3e78cc4fd95c80db55ab4aed3ef7bb94b9fe666a))
+* probando borrar cosas ([975172e](https://github.com/konami12/test-template/commit/975172e31f4487a689f93eb615dbc734edbc726e))
+* probando borrar cosas ([9616c18](https://github.com/konami12/test-template/commit/9616c18429c89d2080740e8dbd51c95c004334c1))
+* probando borrar cosas ([11ce2f8](https://github.com/konami12/test-template/commit/11ce2f8ac311e7747873c48eb1021536ea74bfd1))
+* probando borrar cosas ([cfb9e96](https://github.com/konami12/test-template/commit/cfb9e961f889b35e3a8208f91421a9f7766224b8))
+* probando borrar cosas ([0fb1435](https://github.com/konami12/test-template/commit/0fb143514bf205d4ff85741aa5d597d8782119f4))
+* probando borrar cosas ([d6da7ec](https://github.com/konami12/test-template/commit/d6da7eca03df76a3d4fd3757057d053464cd51cf))
+* probando borrar cosas ([0a40104](https://github.com/konami12/test-template/commit/0a40104dcc40461ca51f88941c63570c7d688856))
+* probando borrar cosas ([7bf5ec9](https://github.com/konami12/test-template/commit/7bf5ec92cc3c26a9c657700938c148dd7304afae))
+* probando borrar cosas ([bed82bc](https://github.com/konami12/test-template/commit/bed82bc80f54f46ced8997aa5bdf1294fea53440))
+* probando borrar cosas ([bae083a](https://github.com/konami12/test-template/commit/bae083a1d1c61f99def2fb76264ac8ee41162b22))
+* probando borrar cosas ([b09cd45](https://github.com/konami12/test-template/commit/b09cd45c08bfee783635704773ee93f054d398ff))
+* probando borrar cosas ([d1a3f09](https://github.com/konami12/test-template/commit/d1a3f0970dc40d7c26cd711ebdbef78b075c3bdb))
+* probando borrar cosas ([60d17ff](https://github.com/konami12/test-template/commit/60d17ff36f18f825817d46d41e2d8a8971287192))
+* probando borrar cosas ([7ffcd52](https://github.com/konami12/test-template/commit/7ffcd52be7aa1affb7f3e6fa1f0eccdb23ff40b1))
+* probando borrar cosas ([217d71b](https://github.com/konami12/test-template/commit/217d71b6da673dcc5abfca151050c3be14b07ee0))
+* probando borrar cosas ([cd4573e](https://github.com/konami12/test-template/commit/cd4573e12094a5f54bc2618489301ee64e79f17f))
+* probando borrar cosas ([87bd6d2](https://github.com/konami12/test-template/commit/87bd6d24391cac8bae9d22f97f88d645b1f06287))
+* probando jobs ([c2b2f33](https://github.com/konami12/test-template/commit/c2b2f333e1a684fbee3ede5095b124ba56035a64))
+* probando jobs ([4f10349](https://github.com/konami12/test-template/commit/4f10349b7b1d988f9fbe1f05f347c3bfc55a7440))
+* probando jobs ([04118d1](https://github.com/konami12/test-template/commit/04118d18381db1088cd5bc046c9a36e3f281cfc7))
+* probando jobs ([d0f3b54](https://github.com/konami12/test-template/commit/d0f3b54c2f29fec6407748a4ca27e5a77bc6c8fd))
+* probando jobs ([906b0e2](https://github.com/konami12/test-template/commit/906b0e284e800ce6d29fb87a40047f889fb804db))
+* probando jobs ([32a2936](https://github.com/konami12/test-template/commit/32a293662b683b537a8ff06a7e432ac904875062))
+* probando jobs ([82f5a88](https://github.com/konami12/test-template/commit/82f5a88c18e5690ed038dbce5cc808e1ed3d65b3))
+* probando jobs ([3050520](https://github.com/konami12/test-template/commit/30505201d422541206bc2e5e0589428fd6028dad))
+* probando jobs ([a2d1f74](https://github.com/konami12/test-template/commit/a2d1f74b55e9a2907d33290b38277b3639a3e481))
+* **romper:** ffff ([c0a4b83](https://github.com/konami12/test-template/commit/c0a4b8302160154223729efed73e44c620cbc0e8))
+* **template:** esto es un template de un pull ([7790ec6](https://github.com/konami12/test-template/commit/7790ec6e20965491387ddf45b85332134cd9c053))
+
 ## [4.5.0](https://github.com/konami12/test-template/compare/v4.4.0...v4.5.0) (2022-05-13)
 
 
