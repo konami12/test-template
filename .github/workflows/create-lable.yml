@@ -39,6 +39,7 @@ jobs:
           git push --set-upstream origin main
       - name: ⭕️ BORRANDO EXTRAS
         run: |
+          git checkout develop
           git rm -r $EXTRA_PATH
           rm -R $EXTRA_PATH/package.json
           git add -A
