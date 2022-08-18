@@ -52,5 +52,6 @@ jobs:
           git checkout develop
           git fetch
           git pull
-          git merge main -m "Auto-merge create labels"
+          git checkout main
+          git pull origin develop
           git push
