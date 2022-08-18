@@ -1,8 +1,8 @@
 name: create-label
 on:
-  push:
+  create:
     branches:
-      - develop-main
+      - develop
 env:
   EXTRA_PATH: ./extras/createLabels/
 jobs:
@@ -30,6 +30,13 @@ jobs:
         run: |
           git config --local user.name "GitActionsBot"
           git config --local user.email "gitbot@git.com"
+      - name: 🛠 CREANDO RAMA MAIN
+        run: |
+          git checkout develop
+          git fetch
+          git pull
+          git checkout -b main
+          git push --set-upstream origin main
       - name: ⭕️ BORRANDO EXTRAS
         run: |
           git rm -r $EXTRA_PATH
@@ -44,4 +51,8 @@ jobs:
           git fetch
           git pull
           git merge --no-ff main -m "Auto-merge create labels"
+          git push
+          git checkout main
+          git fetch
+          git merge develop
           git push
