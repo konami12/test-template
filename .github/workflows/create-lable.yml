@@ -37,6 +37,7 @@ jobs:
           git pull
           git checkout -b main
           git push --set-upstream origin main
+          ls
       - name: ⭕️ BORRANDO EXTRAS
         run: |
           git checkout develop
@@ -44,12 +45,12 @@ jobs:
           rm -R $EXTRA_PATH/package.json
           git add -A
           git status
-          git commit -m "chore: Borrando Scripts para crear labels"
+          git commit -m "chore: Eliminando carpeta extras"
           git push
       - name: 🔄 SINCRONIZACION DE RAMAS
         run: |
           git checkout develop
           git fetch
           git pull
-          git merge --no-ff main -m "Auto-merge create labels"
+          git merge main -m "Auto-merge create labels"
           git push
