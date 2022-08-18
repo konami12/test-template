@@ -5,7 +5,6 @@ on:
       - develop
 env:
   EXTRA_PATH: ./extras/createLabels/
-  CREATE_LABEL: ./.github/workflows/create-labels.yml
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -43,9 +42,7 @@ jobs:
         run: |
           git checkout develop
           git rm -r $EXTRA_PATH
-          git rm -r $CREATE_LABEL
           rm -R $EXTRA_PATH/package.json
-          rm -R $CREATE_LABEL
           git add -A
           git status
           git commit -m "chore: Eliminando carpeta"
