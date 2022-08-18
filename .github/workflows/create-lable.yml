@@ -2,7 +2,7 @@ name: create-label
 on:
   create:
     branches:
-      - main
+      - develop-main
 env:
   EXTRA_PATH: ./extras/createLabels/
 jobs:
