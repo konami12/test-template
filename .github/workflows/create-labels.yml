@@ -30,14 +30,6 @@ jobs:
         run: |
           git config --local user.name "GitActionsBot"
           git config --local user.email "gitbot@git.com"
-      - name: 🛠 CREANDO RAMA MAIN
-        run: |
-          git checkout develop
-          git fetch
-          git pull
-          git checkout -b main
-          git push --set-upstream origin main
-          ls
       - name: ⭕️ BORRANDO EXTRAS
         run: |
           git checkout develop
@@ -47,10 +39,11 @@ jobs:
           git status
           git commit -m "chore: Eliminando carpeta"
           git push
-      - name: 🔄 SINCRONIZACION DE RAMAS
+      - name: 🛠 CREANDO RAMA MAIN
         run: |
           git checkout develop
           git fetch
           git pull
-          git merge --no-ff main -m "Auto-merge create labels"
-          git push
+          git checkout -b main
+          git pull origin develop
+          git push --set-upstream origin main
